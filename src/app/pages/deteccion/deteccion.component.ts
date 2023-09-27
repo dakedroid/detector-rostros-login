@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ImagenesService } from 'src/app/services/imagenes.service';
+import {Component, OnInit} from '@angular/core';
+import {ImagenesService} from 'src/app/services/imagenes.service';
 
 @Component({
   selector: 'app-deteccion',
@@ -8,12 +8,13 @@ import { ImagenesService } from 'src/app/services/imagenes.service';
 })
 export class DeteccionComponent implements OnInit {
 
-  idImagen:any;
-  imagenData:any;
-  imgNombre:any;
-  imgFoto:any;
+  idImagen: any;
+  imagenData: any;
+  imgNombre: any;
+  imgFoto: any;
 
-  constructor(private imagenesSvc:ImagenesService) { }
+  constructor(private imagenesSvc: ImagenesService) {
+  }
 
   ngOnInit() {
 
@@ -22,26 +23,26 @@ export class DeteccionComponent implements OnInit {
   }
 
 
-  obtenerImg(){
+  obtenerImg() {
 
     this.idImagen = localStorage.getItem('id');
-    this.imagenesSvc.getImagen(this.idImagen).subscribe(res=>{
+    this.imagenesSvc.getImagen(this.idImagen).subscribe(res => {
 
-        this.imagenData = res;
+      this.imagenData = res;
 
-        this.imgNombre = this.imagenData.nombreImagen;
-        this.imgFoto = this.imagenData.imgUrl;
-     
+      this.imgNombre = this.imagenData.nombreImagen;
+      this.imgFoto = this.imagenData.imgUrl;
+
 
     })
 
   }
 
-  volver(){
-
+  volver() {
+    console.log('Volviendo')
     localStorage.removeItem('id');
-    location.href = '/identificar';
-
+    //location.href = '/identificar';
+    //  window.location.href = 'https://bienestarcontrol-37f4d.web.app';
   }
 
 }

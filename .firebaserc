@@ -1,8 +1,6 @@
 {
   "projects": {
-    "default": "bienestarcontrol-37f4d",
-    "bienestar": "bienestarcontrol-37f4d"
+    "default": "bienestarcontrol-37f4d"
   },
-  "targets": {},
-  "etags": {}
+  "targets": {}
 }

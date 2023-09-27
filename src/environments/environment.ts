@@ -5,12 +5,15 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyDJD3JLlmgHGH7Dyn7nWRLbAq4pAgCOvUU",
-    authDomain: "bienestarcontrol-37f4d.firebaseapp.com",
-    databaseURL: "https://bienestarcontrol-37f4d-default-rtdb.firebaseio.com",
-    projectId: "bienestarcontrol-37f4d",
-    storageBucket: "bienestarcontrol-37f4d.appspot.com",
-    messagingSenderId: "901906739294",
+    projectId: 'bienestarcontrol-37f4d',
+    appId: '1:901906739294:web:73d894ec400a6bb46744cf',
+    databaseURL: 'https://bienestarcontrol-37f4d-default-rtdb.firebaseio.com',
+    storageBucket: 'bienestarcontrol-37f4d.appspot.com',
+    locationId: 'us-central',
+    apiKey: 'AIzaSyDJD3JLlmgHGH7Dyn7nWRLbAq4pAgCOvUU',
+    authDomain: 'bienestarcontrol-37f4d.firebaseapp.com',
+    messagingSenderId: '901906739294',
+    measurementId: 'G-NHYGZ26V4V',
   }
   //CREAR SU PROYECTO EN FIREBASE
 };

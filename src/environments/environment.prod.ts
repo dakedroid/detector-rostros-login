@@ -7,7 +7,7 @@ export const environment = {
     databaseURL: "https://bienestarcontrol-37f4d-default-rtdb.firebaseio.com",
     projectId: "bienestarcontrol-37f4d",
     storageBucket: "bienestarcontrol-37f4d.appspot.com",
-    messagingSenderId: "901906739294",
+    messagingSenderId: "901906739294"
   }
   //CREAR SU PROYECTO EN FIREBASE
 };
