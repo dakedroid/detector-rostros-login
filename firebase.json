@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "deteccion",
+    "site": "login-face-bienestar",
     "public": "dist/detector-image",
     "ignore": [
       "firebase.json",
@@ -12,17 +12,15 @@
         "source": "**",
         "destination": "/index.html"
       }
-    ],
-    "headers": [
-      {
-        "source": "*",
-        "headers": [
-          {
-            "key": "Access-Control-Allow-Origin",
-            "value": "*"
-          }
-        ]
-      }
     ]
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "storage": {
+    "rules": "storage.rules"
   }
 }
+
+

@@ -1,5 +1,6 @@
 import {ComponentFactoryResolver, Injectable} from '@angular/core';
 import {getStorage, ref, uploadBytesResumable, getDownloadURL, deleteObject} from "firebase/storage";
+
 import {ImagenesModel} from '../models/imagenes.model';
 import {FileItems} from '../models/file.items';
 import {Observable} from 'rxjs';
@@ -20,7 +21,7 @@ export class ImagenesService {
 
   constructor(private db: AngularFirestore) {
 
-    this.imagenesCollection = db.collection<ImagenesModel>('imagenes');
+    this.imagenesCollection = db.collection<ImagenesModel>('rostros');
 
   }
 
@@ -94,7 +95,7 @@ export class ImagenesService {
 
     try {
 
-      return await this.db.collection('imagenes').add(imagen);
+      return await this.db.collection('rostros').add(imagen);
 
     } catch (err) {
 

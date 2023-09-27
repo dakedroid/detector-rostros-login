@@ -1,0 +1,33 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "imagenes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "cupo",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "fechaPermiso",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "registrationTime",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "puntualidad",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "time",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

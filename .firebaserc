@@ -1,6 +1,7 @@
 {
   "projects": {
-    "dcea": "deceapp-deaf2"
+    "default": "bienestarcontrol-37f4d",
+    "bienestar": "bienestarcontrol-37f4d"
   },
   "targets": {},
   "etags": {}

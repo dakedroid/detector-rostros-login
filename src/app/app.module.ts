@@ -11,8 +11,9 @@ import { RouterModule } from '@angular/router';
 import { DeteccionComponent } from './pages/deteccion/deteccion.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-import { environment } from '../environments/environment';
 import { ReactiveFormsModule } from '@angular/forms';
+import {AngularFireStorageModule} from "@angular/fire/compat/storage";
+import {environment} from "../environments/environment";
 
 
 @NgModule({
@@ -28,10 +29,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     RouterModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    ReactiveFormsModule,
-
+    AngularFireStorageModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
