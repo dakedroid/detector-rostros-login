@@ -37,7 +37,14 @@ export class DeteccionComponent implements OnInit {
     })
 
   }
+  isModalVisible = false;
+  openModal() {
+    this.isModalVisible = true;
+  }
 
+  closeModal() {
+    this.isModalVisible = false;
+  }
   volver() {
     console.log('Volviendo')
     localStorage.removeItem('id');

@@ -16,6 +16,7 @@ import {initializeApp, provideFirebaseApp} from '@angular/fire/app';
 import {getStorage, provideStorage} from "@angular/fire/storage";
 import {getFirestore, provideFirestore} from "@angular/fire/firestore";
 import {AngularFireStorageModule} from "@angular/fire/compat/storage";
+import { ModalexitoComponent } from './shared/modalexito/modalexito.component';
 
 
 const config = {
@@ -35,7 +36,8 @@ const config = {
     IdentificarComponent,
     NavbarComponent,
     HomeComponent,
-    DeteccionComponent
+    DeteccionComponent,
+    ModalexitoComponent
   ],
   imports: [
     BrowserModule,

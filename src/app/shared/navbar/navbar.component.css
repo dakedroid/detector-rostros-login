@@ -1,0 +1,10 @@
+
+.navbar-dark.bg-dark {
+  background-color: #16372C;
+}
+
+
+.mi-clase {
+  width: 150px; /* Establece el ancho de la imagen en 150 píxeles, puedes ajustarlo según tus necesidades */
+  height: auto;
+}
